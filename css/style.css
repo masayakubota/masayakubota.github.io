@@ -522,7 +522,7 @@ li {
 
   /* ヘッダー */
   .header {
-    /* height: 70vh; */
+    overflow: hidden;
   }
 
   .logo-name {
@@ -661,5 +661,6 @@ li {
   .ogp-image {
     max-width: 1000px;
     width: 1000px;
+    object-fit: fill;
   }
 }
