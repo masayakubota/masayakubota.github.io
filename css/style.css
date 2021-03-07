@@ -186,6 +186,7 @@ li {
 .career-item {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .career-image-wrapper {
@@ -214,6 +215,39 @@ li {
 
   .career-body p:not(:last-child) {
     margin-bottom: 8px;
+  }
+}
+
+/*--------------------------------
+ Art
+---------------------------------*/
+
+.arts-item {
+  flex: 0 0 48%;
+  /* margin-right: 0; */
+  margin: auto;
+}
+
+.arts-image {
+  max-width: auto;
+  max-height: 380px;
+  height: auto;
+  width: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.arts-body {
+  flex: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .arts-body {
+    margin-left: 20%;
+  }
+
+  .arts-item {
+    margin-bottom: 30px;
   }
 }
 
