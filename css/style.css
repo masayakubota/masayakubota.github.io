@@ -291,9 +291,12 @@ li {
   margin-bottom: 20px;
 }
 
+#name-label {
+  font-size: 25px;
+}
+
 @media screen and (max-width: 767px) {
   .profile-body {
-    width: 60%;
     margin-left: 20%;
   }
 }
