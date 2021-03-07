@@ -264,6 +264,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .profile-image-wrapper {
@@ -277,6 +278,13 @@ li {
 
 .profile-body p:not(:last-child) {
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .profile-body {
+    width: 60%;
+    margin-left: 20%;
+  }
 }
 
 /*--------------------------------
