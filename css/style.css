@@ -200,10 +200,21 @@ li {
 
 .career-body {
   flex: 1;
+  margin-left: 20%;
 }
 
 .career-body p:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .career-body {
+    margin-left: 0%;
+  }
+
+  .career-body p:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
 /*--------------------------------
