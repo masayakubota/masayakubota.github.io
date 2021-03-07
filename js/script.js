@@ -5,6 +5,11 @@ $(function () {
 
   var counter = 0;
   topImageChange();
+  setAge();
+
+  function setAge() {
+    $('#age').text(checkAge());
+  }
 
   function topImageChange() {
     setTimeout(function(){
@@ -22,6 +27,28 @@ $(function () {
         topImageChange();
       }
     },7000);
+  }
+
+  function checkAge() {
+      var y = 1997;
+      var m = 3;
+      var d = 3;
+
+      //誕生年月日
+      var birthday  = new Date(y, m-1, d);
+     
+      //今日
+      var today = new Date();
+     
+      //今年の誕生日
+      var thisYearBirthday =
+          new Date(today.getFullYear(), birthday.getMonth(), birthday.getDate());  
+     
+      //今年-誕生年
+      var age = today.getFullYear() - birthday.getFullYear();
+     
+      //今年の誕生日を迎えていなければage-1を返す
+      return (today < thisYearBirthday)?age-1:age;
   }
 
   //photosのリンクを有効化
